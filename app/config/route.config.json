@@ -1,0 +1,27 @@
+{
+    "routes":[
+        {
+            "controller":"../components/user/controller/user.js",
+            "route":"/api/v1/user",
+            "method":"get",
+            "action":"getAll",
+            "secured":false
+        },
+        {
+            "controller":"../components/user/controller/user.js",
+            "route":"/api/v1/user",
+            "method":"post",
+            "action":"create",
+            "secured":false
+        },
+        {
+            "controller":"../components/contact/controller/contact.js",
+            "route":"/api/v1/user/:userId/contact",
+            "method":"post",
+            "action":"create",
+            "secured":false
+        }
+
+    ]
+}
+
